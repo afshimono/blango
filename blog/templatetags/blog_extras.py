@@ -9,6 +9,8 @@ register = template.Library()
 from django.contrib.auth import get_user_model
 user_model = get_user_model()
 
+logger = logging.getLogger(__name__)
+
 @register.filter
 def author_details(author, current_user):
     if not isinstance(author, user_model):

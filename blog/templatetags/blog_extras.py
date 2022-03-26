@@ -47,7 +47,7 @@ def col(extra_classes=""):
 
 
 @register.simple_tag
-def end():
+def endcol():
     return format_html("</div>")
 
 @register.inclusion_tag("blog/post-list.html")
